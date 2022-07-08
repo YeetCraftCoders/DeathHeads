@@ -39,7 +39,7 @@ public class DeathEvent implements Listener {
         if (chance == 2) {
 
             ItemStack head = ItemCreator.of(CompMaterial.PLAYER_HEAD, "&b&lGłowa " + player.getDisplayName(),
-                    "&aLepiej nie zakładać...").skullOwner(event.getEntity().getName()).build().make();
+                    "&aLepiej nie zakładać...").skullOwner(event.getEntity().getName()).make();
 
             Common.broadcast("&a&l[GŁOWA] &bGracz " + player.getDisplayName() + " &bupuścił głowę...");
             player.getWorld().dropItem(player.getLocation(), head);
